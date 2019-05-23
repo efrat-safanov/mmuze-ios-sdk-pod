@@ -1,0 +1,11 @@
+framework module MMuze {
+  umbrella header "MMuze.h"
+
+  export *
+  module * { export * }
+}
+
+module MMuze.Swift {
+    header "MMuze-Swift.h"
+    requires objc
+}
