@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MMuzeSDK"
-  s.version      = "1.0.7"
+  s.version      = "1.0.8"
   s.summary      = "The MMuze SDK allows you to integrate a personal shopping assitant experience into your app"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/efrat-safanov/mmuze-ios-sdk-pod" }
 
   s.vendored_frameworks = 'MMuze.framework'
-  s.preserve_path = 'podname/Frameworks/*'
+  s.preserve_path = 'MMuzeSDK/Frameworks/*'
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
