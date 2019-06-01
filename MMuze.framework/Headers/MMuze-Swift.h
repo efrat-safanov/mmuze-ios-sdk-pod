@@ -214,10 +214,10 @@ SWIFT_CLASS("_TtC5MMuze23MMuzeConversationButton")
 /// NOTE: This view contains within it an MMuzeButton - see respective documentation regarding voice search and permissions.
 SWIFT_CLASS("_TtC5MMuze21MMuzeConversationView")
 @interface MMuzeConversationView : UIViewController
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 /// :nodoc:
 - (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
 @class UITextField;
