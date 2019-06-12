@@ -195,6 +195,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// to prevent future permissions requests.
 SWIFT_CLASS("_TtC5MMuze23MMuzeConversationButton") SWIFT_AVAILABILITY(ios,introduced=10.0)
 @interface MMuzeConversationButton : UIButton
+@property (nonatomic) BOOL shouldShowTooltip;
+@property (nonatomic) BOOL shouldOpenConversationView;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 /// :nodoc:
@@ -214,6 +216,7 @@ SWIFT_CLASS("_TtC5MMuze23MMuzeConversationButton") SWIFT_AVAILABILITY(ios,introd
 /// NOTE: This view contains within it an MMuzeButton - see respective documentation regarding voice search and permissions.
 SWIFT_CLASS("_TtC5MMuze21MMuzeConversationView") SWIFT_AVAILABILITY(ios,introduced=10.0)
 @interface MMuzeConversationView : UIViewController
+/// :nodoc:
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 /// :nodoc:
 - (void)viewDidLoad;
@@ -226,6 +229,7 @@ SWIFT_AVAILABILITY(ios,introduced=10.0)
 @interface MMuzeConversationView (SWIFT_EXTENSION(MMuze)) <UITextFieldDelegate>
 /// :nodoc:
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
+/// :nodoc:
 - (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -352,6 +356,7 @@ SWIFT_CLASS("_TtC5MMuze6PopTip")
 
 
 
+/// :nodoc:
 SWIFT_CLASS("_TtC5MMuze10StyledView")
 @interface StyledView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
