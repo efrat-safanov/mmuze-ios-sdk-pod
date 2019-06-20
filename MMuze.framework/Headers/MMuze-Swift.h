@@ -261,6 +261,7 @@ SWIFT_AVAILABILITY(ios,introduced=10.0)
 /// :nodoc:
 SWIFT_CLASS("_TtC5MMuze13NbrOptionCell")
 @interface NbrOptionCell : UICollectionViewCell
+@property (nonatomic) CGRect bounds;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
