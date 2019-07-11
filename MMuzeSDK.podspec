@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MMuzeSDK"
-  s.version      = "1.0.16"
+  s.version      = "1.0.47"
   s.summary      = "The MMuze SDK allows you to integrate a personal shopping assitant experience into your app"
 
   # This description is used to generate tags and improve search results.
